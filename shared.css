@@ -91,10 +91,19 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle;
-    width: calc(100% - 100px);
+    display: none;
+}
+
+@media (min-width: 40rem) {
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        vertical-align: middle;
+        width: calc(100% - 100px);
+    }
+    .toggle-button {
+        display: none;
+    }
 }
 
 .main-nav__items {
