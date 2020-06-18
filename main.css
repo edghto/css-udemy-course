@@ -114,13 +114,16 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-.key-feautre {
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
+@media (min-width: 40rem) {
+    .key-feautre {
+        display: inline-block;
+        max-width: 25rem;
+        vertical-align: top;
+        width: 30%;
+    }
 }
 
 .key-feature__image {
