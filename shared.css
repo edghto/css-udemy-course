@@ -165,10 +165,13 @@ main {
     text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-footer__link { 
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -181,14 +184,19 @@ main {
     color: #ccc;
 } 
 
-@media (min-width: 40rem) {
-    .main-footer {
-        margin-top: 3rem; 
-    }
+.main-footer {
+    margin-top: 3rem; 
+}
 
+@media (min-width: 40rem) {
+
+    .main-footer__links { 
+        flex-direction: row;
+        justify-content: center;
+    }
+    
     .main-footer__link { 
-        display: inline-block;
-        margin: 0 1rem;
+        margin: 0 1rem;  
     }
 }
 
